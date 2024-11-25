@@ -7,7 +7,7 @@ from setuptools import find_packages, setup
 from torch.utils.cpp_extension import CUDA_HOME, CppExtension, CUDAExtension
 
 version = "v1.0"
-package_name = "upn"
+package_name = "chatrex"
 cwd = os.path.dirname(os.path.abspath(__file__))
 
 sha = "Unknown"
@@ -22,7 +22,7 @@ except Exception:
 
 
 def write_version_file():
-    version_path = os.path.join(cwd, "upn", "version.py")
+    version_path = os.path.join(cwd, "chatrex", "version.py")
     with open(version_path, "w") as f:
         f.write(f"__version__ = '{version}'\n")
         # f.write(f"git_version = {repr(sha)}\n")
@@ -35,7 +35,7 @@ torch_ver = [int(x) for x in torch.__version__.split(".")[:2]]
 
 def get_extensions():
     this_dir = os.path.dirname(os.path.abspath(__file__))
-    extensions_dir = os.path.join(this_dir, "upn", "ops", "src")
+    extensions_dir = os.path.join(this_dir,"chatrex/upn", "ops", "src")
 
     main_source = os.path.join(extensions_dir, "vision.cpp")
     sources = glob.glob(os.path.join(extensions_dir, "**", "*.cpp"))
@@ -74,7 +74,7 @@ def get_extensions():
 
     ext_modules = [
         extension(
-            "upn._C",
+            "chatrex.upn._C",
             sources,
             include_dirs=include_dirs,
             define_macros=define_macros,
@@ -172,10 +172,10 @@ if __name__ == "__main__":
     write_version_file()
 
     setup(
-        name="upn",
+        name="chatrex",
         version="v1.0",
         author="International Digital Economy Academy, Qing Jiang",
-        url="https://github.com/IDEA-Research/Universal-Proposal-Network",
+        url="https://github.com/IDEA-Research/ChatRex",
         description="Universal Proposal Network.",
         license=license,
         install_requires=parse_requirements("requirements.txt"),
