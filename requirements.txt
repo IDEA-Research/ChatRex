@@ -9,3 +9,4 @@ timm==1.0.7
 transformers==4.44.2
 pycocotools==2.0.8
 gradio==4.43.0
+gradio-image-prompter

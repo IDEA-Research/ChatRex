@@ -47,7 +47,7 @@ REGION_CAPTION_SINGLE_REGION_SHORT_PHRASE_STAGE2 = [
 
 
 REGION_CAPTION_SINGLE_REGION_BREIFLY_STAGE2 = [
-    "Can you provide me with a brief description of [OBJ]? Answer the question with brief description."
+    "Can you provide me with a brief description of [OBJ]? Answer the question with brief description.",
     "Give a brief description of [OBJ].",
     "What brief description can you provide for [OBJ]?",
     "Provide a brief description for [OBJ].",
@@ -125,7 +125,7 @@ GROUNDING_SINGLE_REGION_STAGE2 = [
 ]
 
 BREIF_CAPTION_WITH_GROUDING_STAGE2 = [
-    "Please breifly describe this image in one sentence and detect all the mentioned objects. Answer the question with grounded answer."
+    "Please breifly describe this image in one sentence and detect all the mentioned objects. Answer the question with grounded answer.",
     "Please briefly describe this image and detect all the mentioned objects. Answer with grounded object indexes.",
     "Breifly describe this image with grounded answer",
     "Provide a brief description of this image and detect the objects mentioned in the description.",

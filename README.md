@@ -604,6 +604,18 @@ TMPDIR='/tmp' python gradio_demos/upn_demo.py
 
 
 ## 4.2 Gradio Demo for ChatRex
+We also provide a gradio demo for ChatRex.
+```bash
+python gradio_demos/chatrex_demo.py
+# if there is permission error, please run the following command
+mkdir tmp
+TMPDIR='/tmp' python gradio_demos/upn_demo.py
+```
+
+<div align=center>
+  <img src="assets/chatrex_gradio.jpg" width=600 >
+</div>
+
 
 
 # 5. LICENSE

@@ -30,11 +30,11 @@ def get_proposal(
     return_score,
 ):
     image = Image.fromarray(image)
-    # if use_fine_grained and use_coarse_grained:
-    #     raise gr.Error("Please select only one prompt type")
+    if use_fine_grained and use_coarse_grained:
+        raise gr.Error("Please select only one prompt type")
 
-    # if not use_coarse_grained and not use_fine_grained:
-    #     raise gr.Error("Please select a prompt type")
+    if not use_coarse_grained and not use_fine_grained:
+        raise gr.Error("Please select a prompt type")
 
     if use_fine_grained:
         prompt_type = "fine_grained_prompt"
