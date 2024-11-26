@@ -1,7 +1,8 @@
 import re
 from typing import Dict, List
-import torch
+
 import numpy as np
+import torch
 from PIL import Image, ImageDraw, ImageFont
 
 
@@ -118,11 +119,20 @@ def convert_all_cate_prediction_to_ans(prediction: str) -> Dict[str, List[str]]:
 
     # Initialize the dictionary to store the result
     ans = {}
-
+    existed_obj_index = []
     for ground, objects in matches:
         ground = ground.strip()
         # Extract the object tags, e.g., <obj0>, <obj1>, <obj2>
         object_tags = re.findall(r"<obj\d+>", objects)
+        filtered_object_tags = []
+        for object_tag in object_tags:
+            if object_tag in existed_obj_index:
+                continue
+            filtered_object_tags.append(object_tag)
+            existed_obj_index.append(object_tag)
+
+        if len(filtered_object_tags) == 0:
+            continue
         # Add the ground truth label and associated object tags to the dictionary
         if ground not in ans:
             ans[ground] = object_tags

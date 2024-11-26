@@ -1,23 +1,36 @@
 
 <div align=center>
-  <img src="assets/teaser.jpg" width=600 >
+  <img src="assets/teaser.jpg" width=800 >
 </div>
 
 
 
 <div align=center>
 
-![Static Badge](https://img.shields.io/badge/Chat-Rex-red) [![arXiv preprint](https://img.shields.io/badge/arxiv_2403.14610-blue%3Flog%3Darxiv)](https://arxiv.org/pdf/2403.14610.pdf)  [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FIDEA-Research%2FChatRex&count_bg=%2379C83D&title_bg=%23E9A771&icon=fossilscm.svg&icon_color=%23DB2D2D&title=DINOS&edge_flat=false)](https://hits.seeyoufarm.com)
+![Static Badge](https://img.shields.io/badge/Chat-Rex-red) [![arXiv preprint](https://img.shields.io/badge/arxiv_2403.14610-blue%3Flog%3Darxiv)](https://arxiv.org/pdf/2403.14610.pdf)  [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FIDEA-Research%2FChatRex&count_bg=%2379C83D&title_bg=%23F4A6A6&icon=waze.svg&icon_color=%23E7E7E7&title=VISITORS&edge_flat=false)](https://hits.seeyoufarm.com)
+
 </div>
 
-<p align="center">
-   <strong><a href="#1-introduction">Introduction </a></strong> •
-   <strong><a href="#2-download">Universal Proposal Network </a></strong> •
-   <strong><a href="#5-maerec">ChatRex</a></strong> •
-   <strong><a href="#5-maerec">Rexverse-2M Dataset</a></strong>
-   
-</p>
 
+----
+
+# Contents
+- [1. Introduction](#1-introduction-)
+- [2. Installation](#2-installation-)
+  * [2.1 Download Pre-trained Models](#21-download-pre-trained-models)
+  * [2.2 Verify Installation](#22-verify-installation)
+- [3. Usage](#3-usage-)
+    * [3.1 Use UPN for Object Proposal Generation](#31-use-upn-for-object-proposal-generation)
+    * [3.2 Usage of ChatRex](#32-usage-of-chatrex)
+        + [3.2.1 ChatRex for Object Detection & Grounding & Referring](#321-chatrex-for-object-detection---grounding---referring)
+        + [3.2.2 ChatRex for Region Caption](#322-chatrex-for-region-caption)
+        + [3.2.3 ChatRex for Grounded Image Captioning](#323-chatrex-for-grounded-image-captioning)
+        + [3.2.4 ChatRex for Grounded Conversation](#324-chatrex-for-grounded-conversation)
+- [4. Gradio Demos](#4-gradio-demos-)
+    * [4.1 Gradio Demo for UPN](#41-gradio-demo-for-upn)
+    * [4.2 Gradio Demo for ChatRex](#42-gradio-demo-for-chatrex)
+- [5. LICENSE](#5-license)
+- [BibTeX](#bibtex-)
 
 ----
 
