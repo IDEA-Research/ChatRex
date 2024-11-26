@@ -2,3 +2,4 @@ build/
 chatrex.egg-info/
 checkpoints/
 tmp/
+.vscode/

@@ -4,11 +4,11 @@ from typing import Dict, List, Union
 
 import numpy as np
 import torch
-import chatrex.upn.transforms.transform as T
 from mmengine import Config
 from PIL import Image
 from torchvision.ops import nms
 
+import chatrex.upn.transforms.transform as T
 from chatrex.upn import build_architecture
 from chatrex.upn.models.module import nested_tensor_from_tensor_list
 
@@ -212,7 +212,10 @@ class UPNWrapper:
             scores = torch.tensor(scores, dtype=torch.float32)
 
             # Apply Non-Maximum Suppression (NMS)
-            keep_indices = nms(boxes, scores, nms_value)
+            if nms_value > 0:
+                keep_indices = nms(boxes, scores, nms_value)
+            else:
+                keep_indices = torch.arange(len(boxes))
 
             # Keep only the boxes that passed NMS
             filtered_boxes = boxes[keep_indices].numpy().astype(np.int32)

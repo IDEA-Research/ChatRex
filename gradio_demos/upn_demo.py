@@ -38,7 +38,7 @@ def get_proposal(
 
     if use_fine_grained:
         prompt_type = "fine_grained_prompt"
-    else:
+    if use_coarse_grained:
         prompt_type = "coarse_grained_prompt"
     proposals = model.inference(image, prompt_type=prompt_type)
     filtered_proposals = model.filter(
@@ -46,8 +46,8 @@ def get_proposal(
     )
     visualized_image, _ = plot_boxes_to_image(
         image.copy(),
-        filtered_proposals["original_xyxy_boxes"],
-        filtered_proposals["scores"],
+        filtered_proposals["original_xyxy_boxes"][0],
+        filtered_proposals["scores"][0],
         point_width=draw_width,
         return_point=draw_points,
         return_score=return_score,
@@ -76,7 +76,7 @@ if __name__ == "__main__":
                     maximum=1.0,
                     step=0.01,
                 )
-                nms_value = gr.Textbox(label="NMS", value=-1)
+                nms_value = gr.Textbox(label="NMS", value=0.8)
                 draw_width = gr.Slider(
                     label="draw_width",
                     value=10,
