@@ -1,6 +1,6 @@
 import re
 from typing import Dict, List
-
+import torch
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont
 
@@ -61,7 +61,11 @@ def plot_boxes_to_image(
     # Draw boxes and masks for each box and label in the target dictionary
     for box, score in zip(boxes, scores):
         # Convert the box coordinates from 0..1 to 0..W, 0..H
-        score = score.item()
+        if isinstance(box, torch.Tensor):
+            box = box.cpu().numpy()
+
+        if isinstance(score, torch.Tensor):
+            score = score.item()
         # Generate a random color for the box outline
         color = tuple(np.random.randint(0, 255, size=3).tolist())
         # Extract the box coordinates

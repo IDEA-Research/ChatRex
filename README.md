@@ -588,6 +588,11 @@ The visualization of the output is like:
 
 ----
 
+# 4. Gradio Demos 🎨
+
+# 5. LICENSE
+
+This project is licensed under the IDEA LICENSE 1.0 - see the [LICENSE](LICENSE) file for details.
 
 
 # BibTeX 📚
