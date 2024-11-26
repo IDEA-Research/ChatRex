@@ -22,7 +22,7 @@
 ----
 
 # 1. Introduction 📚
-**TL;DR: ChatRex is a MLLM skilled in perception that can respond to questions while simultaneously grounding its answers to the referenced objects.**
+**TL;DR: ChatRex is an MLLM skilled in perception that can respond to questions while simultaneously grounding its answers to the referenced objects.**
 
 ChatRex is a Multimodal Large Language Model (MLLM) designed to seamlessly integrate fine-grained object perception and robust language understanding. By adopting a decoupled architecture with a retrieval-based approach for object detection and leveraging high-resolution visual inputs, ChatRex addresses key challenges in perception tasks. It is powered by the Rexverse-2M dataset with diverse image-region-text annotations. ChatRex can be applied to various scenarios requiring fine-grained perception, such as object detection, grounded conversation, grounded image captioning and region
 understanding.
@@ -45,7 +45,7 @@ pip install -v -e .
 
 ## 2.1 Download Pre-trained Models
 We provide model checkpoints for both the ***Universal Proposal Network (UPN)*** and the ***ChatRex model***. You can download the pre-trained models from the following links:
-- [UPN Checkpoint](https://drive.google)
+- [UPN Checkpoint](https://github.com/IDEA-Research/ChatRex/releases/download/upn-large/upn_large.pth)
 - [ChatRex-7B Checkpoint](https://huggingface.co/IDEA-Research/ChatRex-7B)
 
 Or you can also using the following command to download the pre-trained models:
@@ -53,8 +53,7 @@ Or you can also using the following command to download the pre-trained models:
 mkdir checkpoints
 mkdir checkpoints/upn
 # download UPN checkpoint
-wget -O checkpoints/upn/upn_large.pth https://drive.google.com/file/d/
-# download ChatRex checkpoint from huggingface IDEA-Research/ChatRex-7B
+wget -O checkpoints/upn/upn_large.pth https://github.com/IDEA-Research/ChatRex/releases/download/upn-large/upn_large.pth
 # Download ChatRex checkpoint from Hugging Face
 git lfs install
 git clone https://huggingface.co/IDEA-Research/ChatRex-7B checkpoints/chatrex
@@ -190,7 +189,7 @@ from chatrex.upn import UPNWrapper
 if __name__ == "__main__":
     # load the processor
     processor = AutoProcessor.from_pretrained(
-        "checkpoints/chatrex7b",
+        "IDEA-Research/ChatRex-7B",
         trust_remote_code=True,
         device_map="cuda",
     )
@@ -198,7 +197,7 @@ if __name__ == "__main__":
     print(f"loading chatrex model...")
     # load chatrex model
     model = AutoModelForCausalLM.from_pretrained(
-        "checkpoints/chatrex7b",
+        "IDEA-Research/ChatRex-7B",
         trust_remote_code=True,
         use_safetensors=True,
     ).to("cuda")
@@ -308,7 +307,7 @@ from chatrex.upn import UPNWrapper
 if __name__ == "__main__":
     # load the processor
     processor = AutoProcessor.from_pretrained(
-        "checkpoints/chatrex7b",
+        "IDEA-Research/ChatRex-7B",
         trust_remote_code=True,
         device_map="cuda",
     )
@@ -316,7 +315,7 @@ if __name__ == "__main__":
     print(f"loading chatrex model...")
     # load chatrex model
     model = AutoModelForCausalLM.from_pretrained(
-        "checkpoints/chatrex7b",
+        "IDEA-Research/ChatRex-7B",
         trust_remote_code=True,
         use_safetensors=True,
     ).to("cuda")
@@ -402,7 +401,7 @@ from chatrex.upn import UPNWrapper
 if __name__ == "__main__":
     # load the processor
     processor = AutoProcessor.from_pretrained(
-        "checkpoints/chatrex7b",
+        "IDEA-Research/ChatRex-7B",
         trust_remote_code=True,
         device_map="cuda",
     )
@@ -410,7 +409,7 @@ if __name__ == "__main__":
     print(f"loading chatrex model...")
     # load chatrex model
     model = AutoModelForCausalLM.from_pretrained(
-        "checkpoints/chatrex7b",
+        "IDEA-Research/ChatRex-7B",
         trust_remote_code=True,
         use_safetensors=True,
     ).to("cuda")
@@ -506,7 +505,7 @@ from chatrex.upn import UPNWrapper
 if __name__ == "__main__":
     # load the processor
     processor = AutoProcessor.from_pretrained(
-        "checkpoints/chatrex7b",
+        "IDEA-Research/ChatRex-7B",
         trust_remote_code=True,
         device_map="cuda",
     )
@@ -514,7 +513,7 @@ if __name__ == "__main__":
     print(f"loading chatrex model...")
     # load chatrex model
     model = AutoModelForCausalLM.from_pretrained(
-        "checkpoints/chatrex7b",
+        "IDEA-Research/ChatRex-7B",
         trust_remote_code=True,
         use_safetensors=True,
     ).to("cuda")

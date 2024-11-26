@@ -10,7 +10,7 @@ from chatrex.tools.visualize import visualize_chatrex_output
 from chatrex.upn import UPNWrapper
 
 processor = AutoProcessor.from_pretrained(
-    "checkpoints/chatrex7b",
+    "IDEA-Research/ChatRex-7B",
     trust_remote_code=True,
     device_map="cuda",
 )
@@ -18,7 +18,7 @@ processor = AutoProcessor.from_pretrained(
 print(f"loading chatrex model...")
 # load chatrex model
 model = AutoModelForCausalLM.from_pretrained(
-    "checkpoints/chatrex7b",
+    "IDEA-Research/ChatRex-7B",
     trust_remote_code=True,
     use_safetensors=True,
 ).to("cuda")

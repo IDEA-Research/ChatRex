@@ -8,7 +8,7 @@ from chatrex.upn import UPNWrapper
 if __name__ == "__main__":
     # load the processor
     processor = AutoProcessor.from_pretrained(
-        "checkpoints/chatrex7b",
+        "IDEA-Research/ChatRex-7B",
         trust_remote_code=True,
         device_map="cuda",
     )
@@ -16,7 +16,7 @@ if __name__ == "__main__":
     print(f"loading chatrex model...")
     # load chatrex model
     model = AutoModelForCausalLM.from_pretrained(
-        "checkpoints/chatrex7b",
+        "IDEA-Research/ChatRex-7B",
         trust_remote_code=True,
         use_safetensors=True,
     ).to("cuda")
