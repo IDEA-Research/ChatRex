@@ -37,6 +37,9 @@
 # 1. Introduction 📚
 **TL;DR: ChatRex is an MLLM skilled in perception that can respond to questions while simultaneously grounding its answers to the referenced objects.**
 
+<!-- Add a video here -->
+[![Video Name](assets/teaser_cover.jpg)](https://github.com/user-attachments/assets/03d7e0af-1808-4ce8-bc67-854cf40a4972)
+
 ChatRex is a Multimodal Large Language Model (MLLM) designed to seamlessly integrate fine-grained object perception and robust language understanding. By adopting a decoupled architecture with a retrieval-based approach for object detection and leveraging high-resolution visual inputs, ChatRex addresses key challenges in perception tasks. It is powered by the Rexverse-2M dataset with diverse image-region-text annotations. ChatRex can be applied to various scenarios requiring fine-grained perception, such as object detection, grounded conversation, grounded image captioning and region
 understanding.
 
