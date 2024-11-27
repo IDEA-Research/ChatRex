@@ -499,4 +499,4 @@ if __name__ == "__main__":
             outputs=[output_image, llm_raw_output, template_output],
         )
 
-    demo.launch(debug=True, server_name="192.168.73.133", server_port=6512)
+    demo.launch(debug=True)
