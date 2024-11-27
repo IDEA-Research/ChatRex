@@ -11,6 +11,10 @@
 
 </div>
 
+----
+# News
+
+2024-11-27: Corresponding paper is lost in time and space (Submited yearstday night to arXiv, but it doesn't show up today)
 
 ----
 
@@ -37,6 +41,9 @@
 
 # 1. Introduction 📚
 **TL;DR: ChatRex is an MLLM skilled in perception that can respond to questions while simultaneously grounding its answers to the referenced objects.**
+
+<!-- Add a video here -->
+[![Video Name](assets/teaser_cover.jpg)](https://github.com/user-attachments/assets/03d7e0af-1808-4ce8-bc67-854cf40a4972)
 
 ChatRex is a Multimodal Large Language Model (MLLM) designed to seamlessly integrate fine-grained object perception and robust language understanding. By adopting a decoupled architecture with a retrieval-based approach for object detection and leveraging high-resolution visual inputs, ChatRex addresses key challenges in perception tasks. It is powered by the Rexverse-2M dataset with diverse image-region-text annotations. ChatRex can be applied to various scenarios requiring fine-grained perception, such as object detection, grounded conversation, grounded image captioning and region
 understanding.
@@ -620,7 +627,9 @@ TMPDIR='/tmp' python gradio_demos/upn_demo.py
 
 ## 4.2 Gradio Demo for ChatRex
 We also provide a gradio demo for ChatRex. Before you use, we highly recommend you to watch the following video to understand how to use this demo:
-[![Video Name](assets/video_cover.jpg)](https://github.com/user-attachments/assets/e256151e-172f-44b2-b094-5b8ea02b134e)
+
+<!-- Add a video here -->
+[![Video Name](assets/video_cover.jpg)](https://github.com/user-attachments/assets/945e192f-59e3-4c84-8615-20343378279a)
 
 ```bash
 python gradio_demos/chatrex_demo.py
