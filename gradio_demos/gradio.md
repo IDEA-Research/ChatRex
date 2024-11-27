@@ -39,7 +39,7 @@ Welcome to the ChatRex Demo! This tool demonstrates interactive visual prompt me
 ## 1.1. Video Demo for ChatRex
 We also provide a gradio demo for ChatRex. Before you use, we highly recommend you to watch the following video to understand how to use this demo:
 
-[![Video Name](../assets/video_cover.jpg)](https://github.com/user-attachments/assets/e256151e-172f-44b2-b094-5b8ea02b134e)
+[![Video Name](../assets/video_cover.jpg)](https://github.com/user-attachments/assets/945e192f-59e3-4c84-8615-20343378279a)
 
 
 
