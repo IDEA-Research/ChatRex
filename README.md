@@ -11,6 +11,10 @@
 
 </div>
 
+----
+# News
+
+2024-11-27: Corresponding paper is lost in time and space (Submited yearstday night to arXiv, but it doesn't show up today)
 
 ----
 
@@ -622,7 +626,7 @@ TMPDIR='/tmp' python gradio_demos/upn_demo.py
 We also provide a gradio demo for ChatRex. Before you use, we highly recommend you to watch the following video to understand how to use this demo:
 
 <!-- Add a video here -->
-[![Video Name](assets/video_cover.jpg)](https://github.com/user-attachments/assets/e256151e-172f-44b2-b094-5b8ea02b134e)
+[![Video Name](assets/video_cover.jpg)](https://github.com/user-attachments/assets/945e192f-59e3-4c84-8615-20343378279a)
 
 ```bash
 python gradio_demos/chatrex_demo.py
