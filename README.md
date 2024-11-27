@@ -620,6 +620,8 @@ TMPDIR='/tmp' python gradio_demos/upn_demo.py
 
 ## 4.2 Gradio Demo for ChatRex
 We also provide a gradio demo for ChatRex. Before you use, we highly recommend you to watch the following video to understand how to use this demo:
+
+<!-- Add a video here -->
 [![Video Name](assets/video_cover.jpg)](https://github.com/user-attachments/assets/e256151e-172f-44b2-b094-5b8ea02b134e)
 
 ```bash
