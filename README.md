@@ -7,14 +7,10 @@
 
 <div align=center>
 
-![Static Badge](https://img.shields.io/badge/Chat-Rex-red) [![arXiv preprint](https://img.shields.io/badge/arxiv_2403.14610-blue%3Flog%3Darxiv)](https://arxiv.org/pdf/2403.14610.pdf)  [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FIDEA-Research%2FChatRex&count_bg=%2379C83D&title_bg=%23F4A6A6&icon=waze.svg&icon_color=%23E7E7E7&title=VISITORS&edge_flat=false)](https://hits.seeyoufarm.com)
+![Static Badge](https://img.shields.io/badge/Chat-Rex-red) [![arXiv preprint](https://img.shields.io/badge/arxiv_2411.18363-blue%253Flog%253Darxiv
+)](https://arxiv.org/abs/2411.18363)  [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FIDEA-Research%2FChatRex&count_bg=%2379C83D&title_bg=%23F4A6A6&icon=waze.svg&icon_color=%23E7E7E7&title=VISITORS&edge_flat=false)](https://hits.seeyoufarm.com)
 
 </div>
-
-----
-# News
-
-2024-11-27: Corresponding paper is lost in time and space (Submited yearstday night to arXiv, but it doesn't show up today)
 
 ----
 
@@ -650,12 +646,13 @@ ChatRex is licensed under the IDEA License 1.0, Copyright (c) IDEA. All Rights R
 - For the low resolution vision encoder, we are using [openai/clip-vit-large-patch14](https://huggingface.co/openai/clip-vit-large-patch14) which is licensed under [MIT LICENSE](https://github.com/openai/CLIP/blob/main/LICENSE)
 # BibTeX 📚
 ```
-@misc{jiang2024trex2,
-      title={T-Rex2: Towards Generic Object Detection via Text-Visual Prompt Synergy}, 
-      author={Qing Jiang and Feng Li and Zhaoyang Zeng and Tianhe Ren and Shilong Liu and Lei Zhang},
+@misc{jiang2024chatrextamingmultimodalllm,
+      title={ChatRex: Taming Multimodal LLM for Joint Perception and Understanding}, 
+      author={Qing Jiang and Gen luo and Yuqin Yang and Yuda Xiong and Yihao Chen and Zhaoyang Zeng and Tianhe Ren and Lei Zhang},
       year={2024},
-      eprint={2403.14610},
+      eprint={2411.18363},
       archivePrefix={arXiv},
-      primaryClass={cs.CV}
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2411.18363}, 
 }
 ```
