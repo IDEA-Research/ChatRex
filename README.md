@@ -30,10 +30,14 @@
 - [4. Gradio Demos 🎨](#4-gradio-demos-)
   - [4.1 Gradio Demo for UPN](#41-gradio-demo-for-upn)
   - [4.2 Gradio Demo for ChatRex](#42-gradio-demo-for-chatrex)
-- [5. LICENSE](#5-license)
+- [5. RexVerse-2M Dataset](#5-rexverse-2m-dataset)
+- [6. LICENSE](#5-license)
 - [BibTeX 📚](#bibtex-)
 
 ----
+
+# News
+- 2025-1-23: RexVerse-2M dataset is now available at [https://huggingface.co/datasets/IDEA-Research/Rexverse-2M](https://huggingface.co/datasets/IDEA-Research/Rexverse-2M)
 
 # 1. Introduction 📚
 **TL;DR: ChatRex is an MLLM skilled in perception that can respond to questions while simultaneously grounding its answers to the referenced objects.**
@@ -638,9 +642,11 @@ TMPDIR='/tmp' python gradio_demos/upn_demo.py
   <img src="assets/chatrex_gradio.jpg" width=600 >
 </div>
 
+# RexVerse-2M Dataset
+- We have released 500K data samples of RexVerse-2M dataset. You can download the dataset from [Hugging Face](https://huggingface.co/datasets/IDEA-Research/Rexverse-2M)
 
 
-# 5. LICENSE
+# 6. LICENSE
 
 ChatRex is licensed under the IDEA License 1.0, Copyright (c) IDEA. All Rights Reserved. Note that this project utilizes certain datasets and checkpoints that are subject to their respective original licenses. Users must comply with all terms and conditions of these original licenses including but not limited to the:
 - [OpenAI Terms of Use](https://openai.com/policies/terms-of-use) for the dataset. 
