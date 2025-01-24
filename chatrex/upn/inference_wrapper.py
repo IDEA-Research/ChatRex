@@ -17,7 +17,8 @@ def build_model(
     ckpt_path: str,
 ):
     current_path = os.path.dirname(os.path.abspath(__file__))
-    config_path = f"chatrex/upn/configs/upn_large.py"
+    config_file = f"configs/upn_large.py"
+    config_path = os.path.join(current_path, config_file)
     model_cfg = Config.fromfile(config_path).model
     model = build_architecture(model_cfg)
     checkpoint = torch.load(ckpt_path, map_location="cpu")
