@@ -15,7 +15,7 @@ from chatrex.upn.ops.modules import MSDeformAttn
 class DeformableTransformerDecoderLayer(nn.Module):
     """Deformable Transformer Decoder Layer. This is a modified version in Grounding DINO.
     After the query is attented to the image feature, it is further attented to the text feature.
-    The excute order is: self_attn -> cross_attn to text -> cross_attn to image -> ffn
+    The execute order is: self_attn -> cross_attn to text -> cross_attn to image -> ffn
     Args:
         d_model (int): The dimension of keys/values/queries in :class:`MultiheadAttention`.
         d_ffn (int): The dimension of the feedforward network model.
@@ -145,7 +145,7 @@ class DeformableTransformerDecoderLayer(nn.Module):
 @DECODERS.register_module()
 class UPNDecoder(nn.Module):
     """Decoder used in UPN. Each layer is a DeformableTransformerDecoderLayer. The query
-    will be abled to attend the image feature and text feature. The excute order is:
+    will be abled to attend the image feature and text feature. The execute order is:
     self_attn -> cross_attn to image -> ffn
 
     Args:
