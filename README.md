@@ -14,6 +14,11 @@
 
 ----
 
+🔥 [2025/10/15] Rex-Omni: Still using traditional detectors? We've turned object detection into a simple "Next-Token Prediction" task with an MLLM! One model (**fully open-sourced**), zero-shot SOTA performance, tackling detection, referring, OCR, and GUI grounding all at once. Come see the next generation of perception models
+
+👉 [Check out Rex-Omni!](https://github.com/IDEA-Research/Rex-Omni)
+
+
 # Contents
 - [Contents](#contents)
 - [1. Introduction 📚](#1-introduction-)
